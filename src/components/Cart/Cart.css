@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .cart-container {
+      @apply minScreen:max-w-md w-[881px] mt-10 minScreen:mt-0 border border-colorBorder h-fit rounded-xl relative;
+  
+      .img-restaurant{
+        @apply w-full object-cover h-full
+
+      }
+    }
+  
+    .restaurant-info {
+      @apply flex justify-center pt-[19px];
+      h4 {
+        @apply font-bold text-lg;
+      }
+      .rating {
+        @apply text-colorRatingGreen flex items-center ml-3 gap-[5px];
+        p {
+          @apply font-openSans font-semibold text-sm leading-4;
+        }
+        svg{
+          @apply mt-[-2px]
+        }
+      }
+    }
+  
+    .restaurant-location {
+      @apply flex gap-x-[12px] items-center justify-center;
+      p {
+        @apply text-sm;
+      }
+      .map-icon {
+        @apply bg-black w-9 h-9 flex justify-center items-center rounded-xl;
+        svg {
+          @apply w-5 text-white;
+        }
+      }
+    }
+  
+    .button-container {
+      @apply flex justify-center mt-1;
+      .my-button {
+        @apply py-2 px-6 rounded-md bg-colorQuantity text-white text-sm;
+      }
+    }
+  
+    .cart-items-container {
+      @apply mt-10;
+      .total-price-container {
+        @apply px-[18px] flex gap-x-[13px] mt-8 pb-12 items-center;
+        p {
+          @apply text-sm text-colorSecondaryText;
+        }
+        h3 {
+          @apply font-bold text-lg leading-4;
+        }
+      }
+    }
+  }

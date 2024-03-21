@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .app-container {
+    @apply bg-colorBackground min-h-screen font-workSans mb-24;
+  }
+
+  .header-section {
+    @apply hidden smallScreen:block;
+  }
+
+  .meal-list-section {
+    @apply smallScreen:flex smallScreen:flex-col minScreen:flex-row smallScreen:mt-14 smallScreen:items-center minScreen:items-start justify-center minScreen:gap-x-11;
+  }
+
+  .cart-section {
+    @apply hidden smallScreen:block;
+  }
+
+  .footer-section {
+    @apply hidden smallScreen:block;
+  }
+}
+

@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.food-list-item-inner-container {
+    @apply smallScreen:p-2 px-4 py-8 flex smallScreen:flex-row flex-row-reverse border-[3px] w-full;
+    background: transparent;
+    border-color: transparent;
+    border-bottom-color: #f5f5f5;
+  }
+  
+  .food-list-item-inner-container.selected {
+    @apply rounded-xl border-colorPrimary;
+  }
+  
+  .food-list-item-inner-container.selected {
+    
+    background: linear-gradient(96deg, #FFFFFF 0%, #F5F2FF 100%) 0% 0% no-repeat padding-box;
+  }
+  
+  .food-list-image-container {
+    @apply smallScreen:w-full w-3/4 relative;
+  }
+  
+  .food-list-image {
+    @apply float-right smallScreen:float-none rounded-lg object-cover smallScreen:w-[72px] smallScreen:h-[72px] w-[130px] h-[130px];
+  }
+  
+  .food-list-add-button {
+    @apply absolute border -bottom-4 right-[0.4rem] bg-white px-10 py-2.5 border-colorPrimary text-colorPrimary text-lg smallScreen:hidden block;
+  }
+  
+  .food-list-details-container {
+    @apply smallScreen:ml-2 flex flex-col w-full justify-center gap-y-1;
+  }
+  
+  .food-list-title {
+    @apply smallScreen:font-semibold smallScreen:text-lg text-xl smallScreen:leading-4 leading-7;
+  }
+  
+  .food-list-price {
+    @apply leading-4 smallScreen:text-sm text-xl font-semibold whitespace-nowrap mt-3 smallScreen:mt-0;
+  }
+  
+  .food-list-rating {
+    @apply text-colorRatingGreen smallScreen:flex items-center hidden;
+  }
+  
+  .food-list-description {
+    @apply truncate w-[458px] text-sm leading-4 text-colorSecondaryText smallScreen:block hidden;
+  }
+  
+  .food-list-action-icons {
+    @apply smallScreen:flex gap-x-4 hidden;
+  }
+  

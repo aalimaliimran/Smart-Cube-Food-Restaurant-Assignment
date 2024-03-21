@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+
+    
+.modal-container {
+    @apply absolute bg-white flex flex-col w-[450px] z-10 rounded-3xl shadow-xl right-0 -top-28;
+  }
+
+  .carousel-container {
+    @apply w-full relative;
+  }
+
+
+
+  .product-details {
+    @apply h-[280px] p-5 relative;
+  }
+
+  
+ 
+  .carousel-arrow {
+    @apply absolute rounded-full border border-colorDot flex justify-center items-center shadow-[0_3px_6px_#00000029] z-10 bg-white h-10 w-10;
+
+    &.next {
+      @apply top-2/3 right-5;
+    }
+
+    &.prev {
+      @apply top-2/3 left-5;
+    }
+
+    .icon {
+      @apply w-5 stroke-2;
+    }
+  }
+
+  .modal-button {
+    @apply absolute flex items-center top-0 right-0 p-5;
+
+    .heart-button {
+      @apply mr-4 w-10 h-10 rounded-full;
+    }
+
+    .close-button {
+      @apply cursor-pointer  w-10 h-10 rounded-full flex border border-white justify-center items-center;
+    }
+  }
+
+  .product-details {
+    @apply mt-5;
+
+    .title {
+      @apply font-semibold text-lg leading-4;
+    }
+
+    .rating {
+      @apply flex items-center ml-5 gap-[5px];
+
+      .rating-value {
+        @apply font-openSans font-semibold text-sm leading-4;
+      }
+
+      .icon {
+        @apply w-4;
+      }
+    }
+
+    .price {
+      @apply leading-4 text-sm font-semibold text-colorPrimary mt-2;
+    }
+
+    .description {
+      @apply text-colorSecondaryText mt-2;
+    }
+
+    .add-button {
+      @apply absolute bg-colorPrimary text-white rounded-lg py-3 bottom-4 right-0 left-0 mx-4;
+    }
+  }
+
+ 
+}
+
+
+
+.carousel .carousel-status{
+    @apply hidden
+  }

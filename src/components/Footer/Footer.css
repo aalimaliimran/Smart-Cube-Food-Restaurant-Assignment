@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .footer-container {
+    @apply fixed bottom-0 left-0 bg-white h-24 w-full px-4 flex items-center justify-end;
+
+    .footer-inner-container{
+        @apply flex items-center justify-end w-full max-w-[1366px] mx-auto
+    }
+  }
+
+  .payment-button {
+    @apply bg-colorPrimary flex px-32 rounded-full gap-x-2 items-center justify-center;
+
+    .payment-text {
+      @apply text-white text-lg leading-4;
+    }
+
+    .arrow-icon {
+      @apply w-14 text-white stroke-1;
+    }
+  }
+}
+
+

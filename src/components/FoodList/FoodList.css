@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.food-list-title {
+    @apply font-bold text-xl smallScreen:pl-0;
+  }
+  
+  .food-list-badge {
+    @apply bg-colorQuantity w-7 rounded-full ml-3 smallScreen:flex hidden items-center justify-center;
+  }
+  
+  .food-list-select-label {
+    @apply text-colorSecondaryText mr-[2px] text-sm smallScreen:block hidden;
+  }
+  
+  .food-list-item-container {
+    @apply mt-1 w-full;
+  }
+  

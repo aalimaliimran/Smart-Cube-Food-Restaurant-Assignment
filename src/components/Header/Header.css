@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .header-section {
+    @apply mb-6 bg-white shadow-sm sticky top-0 z-[9999];
+    
+    .title {
+        @apply font-bold text-2xl ml-10;
+      }
+  }
+
+  .header-container {
+    @apply  h-24 flex items-center px-8 w-full max-w-[1430px] mx-auto justify-between;
+  }
+
+  .left-section {
+    @apply flex items-center;
+  }
+
+  .logo-container {
+    @apply bg-colorCross w-12 h-12 rounded-full flex justify-center items-center;
+  }
+
+  .logo-icon {
+    @apply w-6;
+  }
+
+ 
+
+  .right-section {
+    @apply flex items-center h-12;
+  }
+
+  .step-indicator {
+    @apply border border-colorBorder px-6 py-4 rounded-3xl flex items-center gap-x-4;
+  }
+
+  .step-text {
+    @apply text-colorPrimary font-bold text-sm leading-4;
+  }
+
+  .progress-bar {
+    @apply flex gap-x-2;
+  }
+
+  .step-dot {
+    @apply h-3 w-3 rounded-full bg-colorDot;
+
+    &.primary {
+      @apply bg-colorPrimary;
+    }
+
+  
+  }
+
+  .separator {
+    @apply h-[6px] w-[358px] bg-colorPrimary;
+  }
+}
+

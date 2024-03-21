@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.category-button {
+    @apply leading-4 smallScreen:text-sm text-2xl px-[26px] py-8 smallScreen:rounded-3xl whitespace-nowrap;
+    padding:14px 25px !important;
+  }
+
+  
+  
+  .category-button.active {
+    @apply smallScreen:bg-colorPrimary smallScreen:text-white smallScreen:border-2 smallScreen:border-transparent border-b-4 pt-9 text-colorPrimary border-colorPrimary;
+  }
+  
+  .category-button.inactive {
+    @apply bg-white smallScreen:border-2 smallScreen:border-colorPrimary smallScreen:text-colorPrimary;
+  }
+  
+  .arrow-button {
+    @apply absolute hidden lg:flex bg-white h-12 w-12 rounded-full border border-colorDot flex justify-center items-center shadow-[0_3px_6px_#00000029] z-10 top-6;
+  }
+  
