@@ -115,4 +115,8 @@ The build is located in the `dist` folder. To properly test your production buil
 - The provided Work Sans font is used throughout the application.
 - Dummy images are used as placeholders since the XD design link only provided a view link, making it impossible to download images.
 
+## Screenshots
+![2024-03-21_20-04-18](https://github.com/aalimaliimran/Smart-Cube-Food-Restaurant-Assignment/assets/108981157/2034194f-e1a3-46cf-84bd-edc55c904dd3)
+
+
 Please reach out to me if there is any issue to run the application, please contact [aalim.ali.imran@gmail.com](mailto:aalim.ali.imran@gmail.com).
